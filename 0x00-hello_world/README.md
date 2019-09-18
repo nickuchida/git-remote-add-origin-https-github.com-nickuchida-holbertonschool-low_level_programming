@@ -1,0 +1,1 @@
+#This is the first project in C programming language for Holberton School. It explores commands gcc, printf, puts, and putchar.
