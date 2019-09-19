@@ -10,6 +10,6 @@ int main(void)
 char c = 'A';
 for (c = 'A'; c <= 'Z'; c++)
 putchar(c);
-putchar(\n);
+putchar('\n');
 return (0);
 }
