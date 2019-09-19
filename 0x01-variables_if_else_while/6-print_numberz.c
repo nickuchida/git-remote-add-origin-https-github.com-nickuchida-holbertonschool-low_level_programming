@@ -7,8 +7,9 @@
 */
 int main(void)
 {
-	char n = 'NULL';
-	for (n == 'NULL'; n <= 'TAB'; n++)
+	char n = '@';
+	char n = '@';
+	for (n == '@'; n <= 'I'; n++)
 		putchar(n);
 	putchar('\n');
 	return (0);

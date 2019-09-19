@@ -7,7 +7,9 @@
 */
 int main(void)
 {
-char a = 'a'
-for (a = 'a'; a <= 'd'; a++)
-putchar(a)
-putchar('\n')
+	char a = 'a';
+	for (a = 'a'; a <= 'd'; a++)
+	putchar(a);
+	putchar('\n');
+	return (0);
+}
