@@ -2,17 +2,18 @@
 #include <holberton.h>
 
 /**
-* print_alphabet function
+* print_alphabet - print alphabet
 *
-* return void
+* Return: 0
 */
 void print_alphabet(void)
 {
 	char c;
-	for(c = 'a'; c <= 'z'; c++)
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
 	}
 	_putchar('\n');
-	return 0;
+	return (0);
 }
