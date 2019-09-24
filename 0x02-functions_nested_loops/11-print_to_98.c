@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+
+/**
+ * print_to_98 - this program prints numbers in order until it reaches 98
+ * @n: number entered
+ * Return: void
+ */
 void print_to_98(int n)
 {
 	while (n < 98)
