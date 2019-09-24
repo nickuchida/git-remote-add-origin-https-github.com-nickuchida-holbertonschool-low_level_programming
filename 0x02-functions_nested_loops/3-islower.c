@@ -9,17 +9,14 @@
 int _islower(int c)
 {
 	int r;
-	int c;
 
-	if (c >= 'a' && c <= 'z')
+	if (c >= 97 && c <= 122)
 	{
 		r = 1;
-		printf("%d", r);
 	}
 	else
 	{
 		r = 0;
-		printf("%d", r);
 	}
-	return (int r);
+	return (r);
 }
