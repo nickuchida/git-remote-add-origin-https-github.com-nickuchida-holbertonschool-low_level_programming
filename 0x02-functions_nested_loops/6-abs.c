@@ -3,13 +3,12 @@
 
 /**
  * _abs - tells the absolute value of a number
- * @int: the number being entered
+ * @c: the number being entered
  * Return: r
  */
 int _abs(int c)
 {
 	int r;
-	int c;
 
 	if (c < 0)
 	{
