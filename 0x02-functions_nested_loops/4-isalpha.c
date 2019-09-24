@@ -3,7 +3,7 @@
 
 /**
  * _isalpha - tells if a character is alphabetical
- *
+ * @c: the character entered
  * Return: r
  */
 int _isalpha(int c)
