@@ -1,0 +1,1 @@
+This project continues to work with C. It involves creating different functions and header files.
