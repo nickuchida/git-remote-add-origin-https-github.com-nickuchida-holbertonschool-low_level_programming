@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - prints 1 to 100, prints fizz for multiples of 3 and 5
@@ -16,7 +17,8 @@ int main(void)
 			printf("Buzz");
 		if (n % 3 != 0 && n % 5 != 0)
 			printf("%d", n);
-		printf(" ");
+		if (n < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
