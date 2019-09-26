@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
 
 /**
  * main - prints 1 to 100, prints fizz for multiples of 3 and 5
