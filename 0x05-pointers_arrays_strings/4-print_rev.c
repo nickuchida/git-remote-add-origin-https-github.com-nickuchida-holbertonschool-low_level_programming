@@ -7,7 +7,7 @@
  */
 void print_rev(char *s)
 {
-	int i = 64;
+	int i = 63;
 
 	while (s[i] >= 0)
 	{
