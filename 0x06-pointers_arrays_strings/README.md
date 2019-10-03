@@ -1,0 +1,1 @@
+This project continues to practice pointers, arrays, and strings. The project contains prototypes of functions I have created to manipulate strings.
