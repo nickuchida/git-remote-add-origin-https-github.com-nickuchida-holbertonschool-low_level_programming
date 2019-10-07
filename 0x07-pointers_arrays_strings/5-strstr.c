@@ -9,6 +9,12 @@
 char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack && *haystack != *needle)
+	{
 		haystack++;
-	return(haystack);
+		if (*haystack == *needle)
+			return (haystack);
+	}
+	if (*haystack == *needle)
+		return (haystack);
+	return (0);
 }
