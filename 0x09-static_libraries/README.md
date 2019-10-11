@@ -1,0 +1,1 @@
+This project is about static libraries. The commands ar, ranlib, and nm are used.
