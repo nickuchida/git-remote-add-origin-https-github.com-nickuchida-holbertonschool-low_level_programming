@@ -1,0 +1,1 @@
+This project is about arguments to main. It uses the commands argc and argv in different function prototypes.
