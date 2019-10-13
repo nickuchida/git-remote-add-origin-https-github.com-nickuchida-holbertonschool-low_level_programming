@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
 	int result;
 
 	if (argc < 2)
+	{
 		printf("Error\n");
+		return (1);
+	}
 	else
 	{
 		result = atoi(argv[1]) * atoi(argv[2]);
