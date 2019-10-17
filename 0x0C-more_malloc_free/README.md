@@ -1,0 +1,1 @@
+This project continues to use malloc and free. Functions string_nconcat, calloc, and array_range are created.
