@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * print_dog - prints the information of dog
+ * @d: dog structure
+ * Return: void
+ */
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
