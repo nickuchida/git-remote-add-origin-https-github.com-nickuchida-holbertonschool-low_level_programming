@@ -26,15 +26,17 @@ int _strlen(char *s)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *my_dog;
+	char *copy1;
+	char *copy2;
 
 	my_dog = malloc(sizeof(dog_t));
 	if (my_dog == NULL)
 		return (NULL);
-	malloc(sizeof(char) * _strlen(name));
-	malloc(sizeof(char) * _strlen(owner));
+	copy1 = malloc(sizeof(char) * _strlen(name));
+	copy2 = malloc(sizeof(char) * _strlen(owner));
 
-	my_dog->name = name;
+	my_dog->name = copy1;
 	my_dog->age = age;
-	my_dog->owner = owner;
+	my_dog->owner = copy2;
 	return (my_dog);
 }
