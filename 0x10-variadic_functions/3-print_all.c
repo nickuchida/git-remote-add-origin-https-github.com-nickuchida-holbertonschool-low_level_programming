@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *s = "(nil)";
 
-	while(format == NULL)
+	while (format == NULL)
 		return;
 
 	va_start(print, format);
