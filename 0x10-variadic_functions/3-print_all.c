@@ -29,16 +29,14 @@ void print_all(const char * const format, ...)
 			printf("%f", va_arg(print, double));
 			break;
 		case 's':
+			s = va_arg(print, char *);
 			if (s != NULL)
-			{
-				s = va_arg(print, char *);
 				string = s;
-			}
 			printf("%s", string);
 			break;
 		default:
 			i++;
-			break;
+			continue;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
 		     format[i] == 's') && format[i + 1] != '\0')
