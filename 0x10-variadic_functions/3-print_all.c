@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list print;
 	int i = 0;
-	char *s = "(nil)";
+	char *s, *string = "(nil)";
 
 	va_start(print, format);
 
@@ -30,10 +30,14 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			if (s != NULL)
+			{
 				s = va_arg(print, char *);
-			printf("%s", s);
+				string = s;
+			}
+			printf("%s", string);
 			break;
 		default:
+			i++;
 			break;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
