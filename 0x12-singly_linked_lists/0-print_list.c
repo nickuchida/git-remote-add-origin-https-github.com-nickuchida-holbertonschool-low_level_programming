@@ -1,24 +1,17 @@
 #include "lists.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: the character string being measured
- * Return: i
+ * print_list - prints all elements of a list
+ * @h: the structure
+ * Return: number of nodes
  */
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
 size_t print_list(const list_t *h)
 {
+	size_t nodes = 0;
+
 	if (h->str == NULL)
 		printf("[0] (nil)\n");
-	printf("[%d] %s", _strlen(h->str), h->str);
-	printf("\n");
-	return (0);
+	printf("[%d] %s\n", h->len, h->str);
+	printf("[%d] %s\n", h->len, new->next);
+	return (nodes);
 }
