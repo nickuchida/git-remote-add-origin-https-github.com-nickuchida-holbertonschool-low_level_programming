@@ -3,31 +3,21 @@
 #include <stdlib.h>
 
 /**
- * _strlen - returns the length of a string
- * @s: the character string being measured
- * Return: i
- */
-int _strlen(const char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-/**
  * binary_to_uint - convers a binary number to unsigned int
  * @b: binary number
  * Return: unsigned int conversion
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int base = 1, count, n;
+	int base = 1, count = 0, n;
 
-	count = _strlen(b);
+	if (!b)
+		return (0);
+
+	for (; b[count] != '\0'; count++)
+		if (b[count] != '0' && b[count] != '1')
+			return (0);
 	count--;
-
 	for (n = 0; count >= 0; count--)
 	{
 		if (b[count] == '1')
